@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Service\" />
-    <Folder Include="Repositories\" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Service\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskFlow.Commom\TaskFlow.Common.csproj" />
   </ItemGroup>
 
 </Project>

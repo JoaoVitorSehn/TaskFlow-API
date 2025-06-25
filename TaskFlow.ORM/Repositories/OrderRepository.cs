@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.ORM.Repositories;
 
-public class CustomerRepository
+public class OrderRepository
 {
 
 }

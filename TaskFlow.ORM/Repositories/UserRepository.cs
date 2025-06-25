@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace TaskFlow.ORM.Repositories;
 
-namespace TaskFlow.ORM.Repositories
+public class UserRepository
 {
-    internal class UserRepository
-    {
-    }
+
 }
