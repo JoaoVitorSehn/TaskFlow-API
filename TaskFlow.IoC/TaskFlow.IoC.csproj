@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaskFlow.API\TaskFlow.WebApi.csproj" />
+  </ItemGroup>
+
 </Project>

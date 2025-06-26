@@ -9,4 +9,9 @@
 	<ItemGroup>
 	  <Folder Include="Users\" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TaskFlow.Commom\TaskFlow.Common.csproj" />
+	  <ProjectReference Include="..\TaskFlow.Domain\TaskFlow.Domain.csproj" />
+	</ItemGroup>
 </Project>

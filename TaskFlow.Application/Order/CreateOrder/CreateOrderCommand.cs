@@ -1,4 +1,6 @@
-﻿namespace TaskFlow.Application.Order.CreateOrder;
+﻿using MediatR;
+
+namespace TaskFlow.Application.Order.CreateOrder;
 
 /// <summary>
 /// Command for creating a new order.
@@ -15,7 +17,7 @@
 /// <see cref="AbstractValidator{T}"/> to ensure that the fields are correctly
 /// populated and follow the required business rules.
 /// </remarks>
-public class CreateOrderCommand
+public class CreateOrderCommand : IRequest<CreateOrderResult>
 {
     /// <summary>
     /// Gets or sets the unique order number. Must be unique within the system.
@@ -42,4 +44,10 @@ public class CreateOrderCommand
     /// Gets or sets the unique identifier of the customer associated with the order.
     /// </summary>
     public Guid CustomerId { get; set; }
+
+    /// <summary>
+    /// Gets or sets the total price of the order.
+    /// Represents the full amount to be charged for the products or services included in the order.
+    /// </summary>
+    public decimal Price { get; set; } = 0.0m;
 }
